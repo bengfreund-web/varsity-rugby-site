@@ -296,6 +296,33 @@ p { margin: 0 0 1em; }
   border-radius: 999px;
 }
 
+/* ---------- Logo strip ---------- */
+
+.logo-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  padding: 48px 0;
+}
+
+.logo-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  height: 90px;
+  width: auto;
+}
+
+@media (max-width: 640px) {
+  .logo-strip { padding: 32px 0; }
+  .logo-strip-inner { gap: 36px; }
+  .partner-logo { height: 64px; }
+}
+
 /* ---------- Sections ---------- */
 
 .section {
@@ -515,11 +542,6 @@ p { margin: 0 0 1em; }
 }
 
 .footer-contact dd a:hover { color: var(--accent); filter: brightness(1.4); }
-
-.placeholder-inline {
-  font-style: italic;
-  color: rgba(255,255,255,0.45) !important;
-}
 
 .footer-bottom {
   padding: 20px 24px;
