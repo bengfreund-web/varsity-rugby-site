@@ -42,4 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     revealEls.forEach(function (el) { observer.observe(el); });
   }
+
+  var mapCities = document.querySelectorAll(".map-city");
+  mapCities.forEach(function (city) {
+    city.addEventListener("click", function () {
+      var wasActive = city.classList.contains("active");
+      mapCities.forEach(function (c) { c.classList.remove("active"); });
+      if (!wasActive) city.classList.add("active");
+    });
+    city.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        city.click();
+      }
+    });
+  });
 });
