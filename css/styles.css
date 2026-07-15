@@ -468,6 +468,62 @@ p { margin: 0 0 1em; }
   filter: brightness(1.35);
   font-weight: 800;
 }
+/* ---------- Growth chart (small supplementary detail) ---------- */
+
+.chart-section {
+  padding: 40px 0;
+  background: var(--off-white);
+}
+
+.mini-chart {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 32px;
+  max-width: 640px;
+}
+
+.mini-chart-centered {
+  margin: 0 auto;
+}
+
+.mini-chart-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gray);
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.growth-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-value {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--primary);
+  text-anchor: middle;
+}
+
+.chart-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  fill: var(--gray);
+  text-anchor: middle;
+}
+
+.mini-chart-source {
+  font-size: 0.7rem;
+  color: var(--gray);
+  margin: 0.6em 0 0;
+  line-height: 1.4;
+  text-align: center;
+}
 
 /* ---------- Montana program map ---------- */
 
