@@ -487,6 +487,49 @@ p { margin: 0 0 1em; }
   margin: 0 auto;
 }
 
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.chart-row .mini-chart {
+  flex: 1 1 320px;
+  max-width: 480px;
+}
+
+.stat-trio {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 1.4em 0 0;
+}
+
+.stat-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.stat-label {
+  margin-top: 0.35em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
 .mini-chart-title {
   font-size: 0.78rem;
   font-weight: 600;
