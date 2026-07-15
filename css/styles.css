@@ -66,6 +66,10 @@ html {
 .timeline li.reveal:nth-child(4) { transition-delay: 0.3s; }
 .timeline li.reveal:nth-child(5) { transition-delay: 0.4s; }
 
+.faq-list .reveal:nth-child(2) { transition-delay: 0.1s; }
+.faq-list .reveal:nth-child(3) { transition-delay: 0.2s; }
+.faq-list .reveal:nth-child(4) { transition-delay: 0.3s; }
+
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
@@ -468,6 +472,7 @@ p { margin: 0 0 1em; }
   filter: brightness(1.35);
   font-weight: 800;
 }
+
 /* ---------- Growth chart (small supplementary detail) ---------- */
 
 .chart-section {
@@ -710,6 +715,33 @@ p { margin: 0 0 1em; }
   color: var(--gray);
 }
 
+/* ---------- FAQ ---------- */
+
+.faq-list {
+  max-width: 760px;
+  margin: 2.5rem auto 0;
+}
+
+.faq-item {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  color: var(--primary);
+  margin-bottom: 0.4em;
+}
+
+.faq-item p {
+  color: var(--gray);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -766,6 +798,14 @@ p { margin: 0 0 1em; }
   padding: 20px 24px;
   font-size: 0.8rem;
   color: rgba(255,255,255,0.5);
+}
+
+.footer-bottom p { margin: 0 0 0.4em; }
+.footer-bottom p:last-child { margin-bottom: 0; }
+
+.footer-note {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.35);
 }
 
 /* ---------- Responsive ---------- */
