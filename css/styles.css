@@ -162,8 +162,6 @@ p { margin: 0 0 1em; }
   max-width: none;
   text-align: center;
   margin: 2.5rem 0 0;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
 }
 
 /* ---------- Header ---------- */
@@ -474,7 +472,7 @@ p { margin: 0 0 1em; }
 /* ---------- Montana program map ---------- */
 
 .map-wrap {
-  margin-top: 2.75rem;
+  margin: 2.75rem auto 0;
   max-width: 720px;
 }
 
