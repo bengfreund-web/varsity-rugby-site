@@ -57,6 +57,7 @@ html {
 .pillar-row .reveal:nth-child(3),
 .card-grid .reveal:nth-child(3),
 .subject-grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+.pillar-row .reveal:nth-child(4),
 .card-grid .reveal:nth-child(4),
 .subject-grid .reveal:nth-child(4) { transition-delay: 0.3s; }
 
@@ -166,6 +167,14 @@ p { margin: 0 0 1em; }
   max-width: none;
   text-align: center;
   margin: 2.5rem 0 0;
+}
+
+.statement-section {
+  padding: 56px 0;
+}
+
+.statement-section .statement {
+  margin: 0;
 }
 
 /* ---------- Header ---------- */
@@ -342,6 +351,10 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--line);
 }
 
+.pillar-row.four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .pillar h3 {
   color: var(--primary);
   margin-bottom: 0.4em;
@@ -500,8 +513,9 @@ p { margin: 0 0 1em; }
 }
 
 .chart-row .mini-chart {
-  flex: 1 1 320px;
-  max-width: 480px;
+  flex: 1 1 360px;
+  max-width: 560px;
+  padding: 28px 36px;
 }
 
 .stat-trio {
@@ -519,7 +533,7 @@ p { margin: 0 0 1em; }
 }
 
 .stat-num {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   font-weight: 800;
   color: var(--accent);
   line-height: 1.1;
@@ -536,7 +550,7 @@ p { margin: 0 0 1em; }
 }
 
 .mini-chart-title {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--gray);
   margin: 0 0 0.5em;
@@ -731,7 +745,7 @@ p { margin: 0 0 1em; }
 }
 
 .faq-list {
-  max-width: 520px;
+  max-width: 700px;
   margin: 1.5rem auto 0;
 }
 
