@@ -171,6 +171,8 @@ p { margin: 0 0 1em; }
 
 .statement-section {
   padding: 56px 0;
+  background: var(--white);
+  border-top: 1px solid var(--line);
 }
 
 .statement-section .statement {
@@ -868,6 +870,7 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 860px) {
   .pillar-row { grid-template-columns: 1fr 1fr; }
+  .pillar-row.four { grid-template-columns: 1fr 1fr; }
   .needs-grid { grid-template-columns: 1fr; }
   .subject-grid,
   .subject-grid.four { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
@@ -905,6 +908,7 @@ p { margin: 0 0 1em; }
   .infra-lede { font-size: 1.08rem; }
 
   .pillar-row { grid-template-columns: 1fr; gap: 24px; }
+  .pillar-row.four { grid-template-columns: 1fr; gap: 24px; }
 
   .subject-grid,
   .subject-grid.four { grid-template-columns: 1fr; gap: 28px; }
