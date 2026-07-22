@@ -608,9 +608,16 @@ p { margin: 0 0 1em; }
   list-style: none;
 }
 
-.cost-panel-summary::-webkit-details-marker,
-.schedule-panel-summary::-webkit-details-marker {
+.cost-panel-summary::-webkit-details-marker {
   display: none;
+}
+
+.cost-panel-stacked {
+  margin-top: 24px;
+}
+
+.cost-panel-stacked > .cost-panel-summary .chevron {
+  margin-left: auto;
 }
 
 .cost-panel-title {
@@ -643,7 +650,6 @@ p { margin: 0 0 1em; }
 }
 
 .cost-panel[open] > .cost-panel-summary .chevron,
-.schedule-panel[open] > .schedule-panel-summary .chevron,
 .rotation-details[open] > summary .chevron {
   transform: rotate(45deg);
 }
@@ -707,29 +713,7 @@ p { margin: 0 0 1em; }
   color: var(--gray);
 }
 
-/* ---------- Schedule panel (nested inside cost panel) ---------- */
-
-.schedule-panel {
-  margin-top: 24px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--off-white);
-  overflow: hidden;
-}
-
-.schedule-panel-summary {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 20px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.schedule-panel-body {
-  padding: 4px 20px 20px;
-  border-top: 1px solid var(--line);
-}
+/* ---------- Proposed Schedule (standalone panel) ---------- */
 
 .schedule-legs {
   margin-top: 16px;
