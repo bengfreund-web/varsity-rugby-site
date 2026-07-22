@@ -710,10 +710,66 @@ p { margin: 0 0 1em; }
   margin-left: auto;
 }
 
+.cost-line-subsidy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 2px 4px;
+}
+
+.cost-line-subsidy .cost-line-name {
+  font-weight: 600;
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+.cost-line-subsidy .cost-line-amount {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.cost-line-net {
+  border-top: 1px solid var(--line);
+}
+
 .cost-footnote {
   margin: 18px 0 0;
   font-size: 0.82rem;
   color: var(--gray);
+}
+
+/* ---------- MIS funding panel text ---------- */
+
+.funding-panel-text {
+  margin: 0;
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.funding-panel-text a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.funding-panel-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- MIS partnership section ---------- */
+
+#partner .lede a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#partner .lede a:hover {
+  text-decoration: underline;
 }
 
 /* ---------- Proposed Schedule (standalone panel) ---------- */
