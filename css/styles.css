@@ -741,25 +741,6 @@ p { margin: 0 0 1em; }
   color: var(--gray);
 }
 
-/* ---------- MIS funding panel text ---------- */
-
-.funding-panel-text {
-  margin: 0;
-  color: var(--gray);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.funding-panel-text a {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.funding-panel-text a:hover {
-  text-decoration: underline;
-}
-
 /* ---------- MIS partnership section ---------- */
 
 #partner .lede a {
