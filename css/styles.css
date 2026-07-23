@@ -772,6 +772,25 @@ p { margin: 0 0 1em; }
   text-decoration: underline;
 }
 
+/* ---------- What is Rugby video ---------- */
+
+.video-embed {
+  margin-top: 2rem;
+  max-width: 860px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #000;
+}
+
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* ---------- Proposed Schedule (standalone panel) ---------- */
 
 .schedule-legs {
