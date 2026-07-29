@@ -775,20 +775,17 @@ p { margin: 0 0 1em; }
 /* ---------- Supporting photo bands ---------- */
 
 .photo-band {
-  width: 100%;
-  height: 360px;
-  overflow: hidden;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .photo-band img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
+  border-radius: var(--radius);
 }
-
-@media (max-width: 860px) { .photo-band { height: 280px; } }
-@media (max-width: 640px) { .photo-band { height: 200px; } }
 
 /* ---------- Proposed Schedule (standalone panel) ---------- */
 
